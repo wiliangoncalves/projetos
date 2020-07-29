@@ -1,0 +1,113 @@
+body{
+    font-family: tahoma, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+header{
+    background-color: #162028;
+    position: relative;
+    width: 1024px;
+    height: 50px;
+}
+
+.logo{
+    margin: 10px 10px 0px 130px;
+}
+nav{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: #2e4e5c;
+    text-decoration: none;
+    margin: 0px 25px 0px 10px;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    transition: color .3s linear;
+    color: white;
+}
+.mulher{
+    margin-bottom: 20px;
+}
+
+/* main config */
+.main-hero h3{
+    text-transform: capitalize;
+    font-size: 36px;
+}
+.main-hero p{
+    color: #2f4a55;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+/* cards */
+.cards{
+    margin: 100px 0px 500px 0px; 
+}
+.cards h4{
+    color: #555;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cards p{
+    color: rgb(85, 85, 85);
+    text-transform: capitalize;
+    text-align: center;
+}
+.cards, .main-hero{
+    width: 80%;
+    margin: auto;
+}
+.card-1, .card-2, .card-3{
+    float: left;
+    width: 32%;
+    margin: 50px 10px 50px 0px;
+}
+
+/* main-never */
+.main-never{
+    clear: both;
+    background-image: url(imagens/bg_detalhe.png);
+    width: 1024px;
+    height: 450px;
+    background-position: bottom;
+    background-size: cover;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.main-never h1{
+    color: white;
+    text-transform: uppercase;
+}
+.main-never p{
+    width: 50%;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    padding: 1px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    width: 1024px;
+    size: 12px;
+    letter-spacing: 5px;
+    box-sizing: border-box;
+    background-color: #0b171f;
+    color: #40586a;
+}
