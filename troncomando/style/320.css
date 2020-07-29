@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* esconde itens do 1200px */
+.menu{
+    display: none;
+}
+
+body{
+    background-color:rgb(34, 33, 33);
+}
+
+/* logo */
+.logo, .sen, .sui{
+    display: none;
+}
+
+/* Config do menu */
+h1{
+    position: relative;
+    top: -25px;
+    left: 90%;
+    width: 100%;
+    height: 0;
+    margin-left: 100%;
+    padding: 0 0 0 5px;
+    font-size: 1em;
+    color: #999;
+}
+h1 a{
+    text-decoration: none;
+    padding: 10%;
+}
+h1 a:hover{ 
+    font-size: 1.1em;
+    color: white;
+}
+h1 a:visited{
+    color: #999;
+}
+
+
+nav a .link{
+    color: #999;
+}
+nav a .link:hover{
+    color: white;
+    border-left: 4px solid black;
+    border-bottom: 2px solid black;
+}
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    height: 5%;
+    width: 12%;
+    left: 0;
+    z-index: 2;
+    background-color: rgb(29, 27, 27);
+}
+
+.barra{
+    background-color: rgb(27, 26, 26);
+    height: 0;
+    width: 0;
+    position: absolute;
+    visibility: hidden;
+    overflow: scroll;
+    transition: all .9s ease;
+    transition-duration: 0.7s;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.link{
+    background-color: #494950;
+    padding: 5px;
+    font-family: arial;
+    font-size: 12pt;
+    transition: all .2s linear; 
+    color: #f4f4f9;
+    margin-bottom: 4px; 
+    border-bottom: 2px solid orange;
+    border-left: 4px solid orange;
+    
+}
+ /* Config dos Sub Menus */
+ .dbzmenu{
+    color: white;
+    padding: 5px;
+    margin: 2% 0 3% 5%;
+    background-color: rgb(27, 26, 26);
+    border-left: 4px solid orange;
+    border-bottom: 2px solid orange;
+    transform: all .2s linear;
+    display: none;
+ }
+ .zfilme{
+ color: white;
+ padding: 5px;
+ margin: 2% 0 3% 5%;
+ background-color: rgb(27, 26, 26);
+ border-left: 4px solid orange;
+ border-bottom: 2px solid orange;
+ transform: all .2s linear;
+ display: none;}
+
+ #contador{
+    display: none;
+ }
+
+ /* Config da barra dos mangás de YuYu Hakusho */
+ #yusaga1, #yusaga2, #yusaga3, #yusaga4, #yumanga1, #yumanga2, #yumanga3, #yumanga4, #yumanga5, #yumanga6, #yumanga7, #yumanga8, #yumanga9, #yumanga10, #yumanga11, #yumanga12, #yumanga13, #yumanga14, #yumanga15, #yumanga16, #yumanga17, #yumanga18, #yumanga19{
+    background-color: rgb(27, 26, 26);
+    padding: 5px;
+    font-family: arial;
+    font-size: 12pt;
+    transition: all .2s linear; 
+    color: #f4f4f9;
+    margin-left: 30px;
+    margin-bottom: 10px; 
+    border-bottom: 2px solid orange;
+    border-left: 4px solid orange;
+ }
+/* Config da barra dos mangás de dragon ball super 
+ #super1, #super2, #super3, #super4, #super5, #super6, #super7, #super8, #super9, #super10, #super11, #super12, #super13, #super14,#super15, #super16, #super17, #super18, #super19, #super20, #super21, #super22, #super23, #super24, #super25, #super26, #super27, #super28, #super29, #super30, #super31, #super32, #super33, #super34, #super35, #super36, #super37, #super38, #super39, #super40, #super41, #super42, #super43, #super44, #super45, #super46, #super47, #super48, #super49, #super50, #super51, #super52, #super53, #super54, #super55{
+    background-color: rgb(27, 26, 26);
+    padding: 5px;
+    font-family: arial;
+    font-size: 12pt;
+    transition: all .2s linear; 
+    color: #f4f4f9;
+    margin-left: 30px;
+    margin-bottom: 2px; 
+    border-bottom: 2px solid orange;
+    border-left: 4px solid orange;
+ }
+*/
+ /* Config da Barra */
+
+#check:checked ~ .barra {
+    background-color: rgb(27, 26, 26);
+    visibility: visible;
+    width: 80%;
+    height: 80%;
+    transition-duration: 0.5s ease;
+    z-index: 1;
+}
+
+/* Config da tela do inicio */
+.filmes img{
+    width: 70%;
+}
+.filmes{
+    margin: 2%;
+}
+.filmes p{
+    margin-bottom: 5%;
+}
+.inicio{
+    background-color: rgb(56, 51, 51);
+    border: 2px solid rgb(51, 48, 48);
+    position: fixed;
+    top: 15%;
+    margin: 5%;
+    height: 75%;
+    overflow: scroll;
+    padding: 15px;
+    border-radius: 2%;
+}
+
+.noticias{
+    border: 1px solid #363434;
+    border-radius: 10px;
+    background-color: rgb(34, 33, 33);
+    width: 95%;
+    top: 10px;
+    height: 100%;
+    padding: 10px;
+}
+.noticias h3{
+    font-size: 20px;
+    color: rgb(250, 128, 57);
+    border-bottom: 2px solid #363434;
+    margin-bottom: 10px;
+}
+.noticias h4{
+    margin: 10px;
+    color: #000000;
+}
+.inicio h2{
+    color: rgb(250, 128, 57);/*rgb(83, 77, 77);*/
+}
+.inicio h2{
+    border-bottom: 2px solid rgb(71, 66, 66);
+    margin-bottom: 5px;
+}

@@ -1,0 +1,185 @@
+body{
+    background-color: #272525;
+}
+h1{
+    position: relative;
+}
+.conteudo{
+    width: 80%;
+    height: 100%;
+    margin: 5% 10%;
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    clear: both;
+    margin-top: -0.5%;
+    position: absolute;
+}
+header a{
+    text-decoration: none;
+}
+header a h1 .logo:hover{
+    width: 51%;
+}
+header a h1 .logo{
+    width: 50%;
+}
+header a h1 .sen{
+    width: 8%;
+    margin-top: 1%;
+    margin-left: 20%;
+}
+header a h1 .sui{
+    width: 9%;
+}
+
+/* Menu */
+label{
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.tira{
+    display: none;
+}
+#barra{
+    display: none;
+}
+.dbzmenu{
+    display: none;
+}
+
+/* Menu config */
+.menu{
+    width: 20%;
+    margin-right: 1%;
+    float: left;
+}
+.navegation{
+    background-color: #1b1919;
+    width: 100%;
+    border: 1px solid #363434;
+    border-radius: 15px;
+    padding: 10px;
+}
+.menu-principal{
+    width: 100%;
+}
+.menu-principal label{
+    margin-bottom: -1px;
+}
+.menu-principal a, label{
+    margin: 5px;
+    border-left: 3px solid rgb(19, 16, 10);
+    border-bottom: 3px solid rgb(19, 16, 10);
+}
+
+.menu-principal, .zsub{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin: 0;
+}
+.menu-principal a, .menu-principal label{
+    display: block;
+    background-color: #242224;
+    text-decoration: none;
+    padding: 10px;
+    color: #8a8a8a;
+}
+.menu-principal a:hover, .menu-principal label:hover{
+    background-color: #111;
+    color: white;
+    border-left: 3px solid orange;
+    border-bottom: 3px solid orange;
+}
+
+.menu-principal input{
+    display: none;
+}
+
+.menu-principal input:checked ~ .zsub{
+    display: block;
+    max-height: 950px;
+}
+.zsub a, .zsub label{
+    background-color: #242224;
+}
+.zsub a:hover{
+    background-color: #111;
+}
+.zsub{
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s ease-in-out;
+}
+.zsub li{
+    margin-left: 8%;
+}
+
+#contador{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+/* */
+main{
+    margin-top: 5%;
+    padding: 15px;
+    width: 100%;
+}
+.inicio{    
+    width: 100%;
+    height: 100%;
+    color: #555555;
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    margin-top: -5%;
+}
+.main-section{
+    border: 1px solid #363434;
+    border-radius: 10px;
+    background-color: #1b1919;
+    margin-left: 25%;
+    width: 65%;
+    height: 100%;
+    padding: 10px;
+}
+.main-section h2{
+    border-bottom: 2px solid #333333;
+}
+.noticias{
+    border: 1px solid #363434;
+    border-radius: 10px;
+    background-color: #1b1919;
+    margin-left: 0%;
+    width: 97%;
+    height: 100%;
+    padding: 10px;
+}
+.noticias h3{
+    font-size: 20px;
+    color: rgb(250, 128, 57);
+}
+.noticias h4{
+    font-size: 18px;
+}
+
+/* Area dos episódios */
+.moviez{
+    border: 2px solid #555555;
+    border-radius: 10px;
+    float: left;
+    padding: 10px;
+    width: 75%;
+    margin-left: 1.5%;
+}
+.filmes, filmez{
+    display: block;
+    width: 100%;
+    margin: auto;
+    
+    overflow: auto;
+}

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Troncomando</title>
+        <meta charset="utf-8">
+        <meta name="author" content="wile">
+        <meta name="description" content="página para assistir animes online e ler mangás">
+        <meta name="keywords" content="anime, online, assistir, naruto, yuyu hakusho, dragon ball, one piece">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../style/320.css" media="screen and (min-width: 50px) and (max-width: 480px)">
+        <link rel="stylesheet" href="#" media="screen and (min-width: 480px) and (max-width: 768px)">
+        <link rel="stylesheet" href="#" media="screen and (min-width: 768px) and (max-width: 1024px)">
+        <link rel="stylesheet" href="../../../style/1024.css" media="screen and (min-width: 1024px)"> 
+        <link rel="stylesheet" href="../../../style/1200.css" media="screen and (min-width: 1200px)">
+    </head>
+
+    <body>
+        <div class="conteudo">
+            <header>
+                <input type="checkbox" id="check">
+                <label id="icone" for="check"><img src="../../../img/nav.png">
+                    <h1><a href="../../../index.html">TronComando</a></h1>
+                </label>
+
+                <div class="barra" id="barra">
+                    <nav id="navega">
+                        <a href="../../../index.html"><div class="link">Inicio</div></a>
+
+                        <a href="#"><div class="link" id="dbz" onclick="dbzclick()">Dragon Ball Z</div>
+                            <script type="text/javascript" src="../../../scripts/dbzclick/dbzclick.js"></script>
+
+                            <a href="../filmes/zfilmes.html"><div class="dbzmenu" id="zfilme">Filmes</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="zsaiya">Saga Saiyajins</div></a>
+
+                            <a href="../freeza/freeza.html"><div class="dbzmenu" id="zfreeza">Saga Freeza</div></a>
+
+                            <a href="../garlick/garlick.html"><div class="dbzmenu" id="zgarlic">Saga Garlic Jr</div></a>
+
+                            <a href="../androides/androides.html"><div class="dbzmenu" id="zandroides">Saga Androides</div></a>
+
+                            <a href="../cell/cell.html"><div class="dbzmenu" id="zcell">Saga Cell</div></a>
+
+                            <a href="../torneio/torneio.html"><div class="dbzmenu" id="ztorneio">Saga Torneio do Outro Mundo</div></a>
+
+                            <a href="../boo/boo.html"><div class="dbzmenu" id="zboo">Saga Majin Boo</div></a>
+                        </a>
+
+                        <a href="#"><div class="link" id="dbs" onclick="superclick()">Dragon Ball Super</div>
+                            <script type="text/javascript" src="../../../scripts/superclick/superclick.js"></script>
+
+                            <a href="../../dragonballsuper/dbsfilmes/dbsfilmes.html"><div class="dbzmenu" id="sfilmes">Filmes</div></a>
+
+                            <a href="../../dragonballsuper/bills/bills.html"><div class="dbzmenu" id="sbills">Saga Deus da Destruição</div></a>
+
+                            <a href="../../dragonballsuper/goldenfreeza/goldenfreeza.html"><div class="dbzmenu" id="sfreeza">Saga Golden Freeza</div></a>
+
+                            <a href="../../dragonballsuper/universo6/universo6.html"><div class="dbzmenu" id="suniverso6">Saga Universo 6</div></a>
+
+                            <a href="../../dragonballsuper/trunks/trunks.html"><div class="dbzmenu" id="strunks">Saga Trunks do Futuro</div></a>
+
+                            <a href="../../dragonballsuper/poder/poder.html"><div class="dbzmenu" id="storneio">Saga Torneio do Poder</div></a>
+                        </a> 
+
+                        <a href="#"><div class="link" id="dbgt" onclick="dbgt()">Dragon Ball GT</div>
+                            <script type="text/javascript" src="../../../scripts/dbgt/dbgt.js"></script>
+
+                            <a href="../../gt/sagaviagem/viagem.html"><div class="dbzmenu" id="gtuniverso">Saga Viagem Pelo Universo</div></a>
+
+                            <a href="../../gt/sagababy/baby.html"><div class="dbzmenu" id="gtbaby">Saga Baby</div></a>
+
+                            <a href="../../gt/sagasuper17/super17.html"><div class="dbzmenu" id="gtsuper17">Saga Super 17</div></a>
+
+                            <a href="../../gt/sagadragoes/dragoes.html"><div class="dbzmenu" id="gtdragoes">Saga Dragões Malignos</div></a>
+                        </a>
+
+                        <a href="#"><div class="link" id="shinaruto" onclick="shinaruto()">Naruto Shippuden</div>
+                            <script type="text/javascript" src="../../../scripts/shinaruto/shinaruto.js"></script>
+
+                            <a href="#"><div class="dbzmenu" id="shifilmes">Filmes</div></a>
+                            
+                            <a href="#"><div class="dbzmenu" id="shinaruto1">1ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto2">2ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto3">3ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto4">4ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto5">5ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto6">6ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto7">7ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto8">8ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto9">9ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto10">10ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto11">11ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto12">12ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto13">13ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto14">14ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto15">15ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto16">16ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto17">17ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto18">18ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto19">19ª Temporada</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="shinaruto20">20ª Temporada</div></a>
+                        </a>
+
+                        <a href="#"><div class="link" id="nanatsu" onclick="nanatsu()">Nanatsu no Taizai</div>
+                            <script type="text/javascript" src="../../../scripts/nanatsu/nanatsu.js"></script>
+                        
+                            <a href="#"><div class="dbzmenu" id="nanova">Ova</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="nana1">1ª Temporada - Os Cavaleiros Sagrados</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="nana2">2ª Temporada - Ressurreição dos Dez mandamentos</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="nana3">3ª Temporada - Ira dos Deuses</div></a>
+                        </a>
+
+                        <a href="#"><div class="link" id="hakusho" onclick="hakushodub()">Yu Yu Hakusho</div>
+                            <script type="text/javascript" src="../../../scripts/hakushodub/hakushodub.js"></script>
+
+                            <a href="#"><div class="dbzmenu" id="yufilmes">Filmes</div></a>
+
+                            <a href="#"><div class="dbzmenu" id="yumanga" onclick="yumanga()">Mangá Online Pt-Br</div>
+                                <script type="text/javascript" src="../../../scripts/yumanga/yumanga.js"></script>
+                            
+                                <a href="#"><div class="dbzmenu" id="yumanga1">#01 Adeus, Vida!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga2">#02 O Despertar Dourado!!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga3">#03 A Floresta Maldita!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga4">#04 Desafio da Demonópolis!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga5">#05 Espírito Uno!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga6">#06 Dois Contra Dois!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga7">#07 A morte súbita da lâmina da faca!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga8">#08 Sem Descanso!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga9">#09 O Desafio Começa Agora!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga10">#10 Não Vou te Perdoar!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga11">#11 Devorar Ou Ser Devorado!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga12">#12 Começa a Luta Final!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga13">#13 Território!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga14">#14 A Passagem!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga15">#15 Yusuke vs Sniper!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga16">#16 A Morte do Demônio!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga17">#17 O Arco do Inferno!</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga18">#18 O Torneio de Unificação</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yumanga19">#19 Para Sempre Yu Yu Hakusho!</div></a>
+                            </a>
+                        
+                            <a href="#"><div class="dbzmenu" id="yudub" onclick="yuyudub()">Dublado</div>
+                                <script type="text/javascript" src="../../../scripts/yuyudub/yuyudub.js"></script>
+                                
+                                <a href="#"><div class="dbzmenu" id="yusaga1">Saga Detetive Espiritual</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yusaga2">Saga Torneio Das Trevas</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yusaga3">Saga Capítulo Negro</div></a>
+
+                                <a href="#"><div class="dbzmenu" id="yusaga4">Saga Três Reis</div></a>
+                            </a>
+                        </a>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="inicio">
+                <main>
+                    <!-- Menu 1200px-->
+                    <section class="menu">
+                        <nav class="navegation">
+                            <ul class="menu-principal">
+                                <li><a href="../../../index.html">Inicio</a></li>
+
+                                <li><input type="checkbox" id="z">
+                                    <label for="z">Dragon Ball Z</label>
+
+                                    <ul class="zsub">
+                                        <li><a href="../filmes/zfilmes.html">Filmes</a></li>
+                                        <li><a href="#">Saga Saiyajin</a></li>
+                                        <li><a href="../freeza/freeza.html">Saga Freeza</a></li>
+                                        <li><a href="../garlick/garlick.html">Saga garlick Jr</a></li>
+                                        <li><a href="../androides/androides.html">Saga Androides</a></li>
+                                        <li><a href="../cell/cell.html">Saga Cell</a></li>
+                                        <li><a href="../torneio/torneio.html">Saga Torneio</a></li>
+                                        <li><a href="../boo/boo.html">Saga Majin Boo</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><input type="checkbox" id="s">
+                                    <label for="s">Dragon Ball Super</label>
+
+                                    <ul class="zsub">
+                                        <li><a href="../../dragonballsuper/dbsfilmes/dbsfilmes.html">Filmes</a></li>
+                                        <li><a href="../../dragonballsuper/bills/bills.html">Saga Bills</a></li>
+                                        <li><a href="../../dragonballsuper/goldenfreeza/goldenfreeza.html">Saga Golden Freeza</a></li>
+                                        <li><a href="../../dragonballsuper/universo6/universo6.html">Saga Universo 6</a></li>
+                                        <li><a href="../../dragonballsuper/trunks/trunks.html">Saga Trunks do Futuro</a></li>
+                                        <li><a href="../../dragonballsuper/poder/poder.html">Saga Torneio Do Poder</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><input type="checkbox" id="gt">
+                                    <label for="gt">Dragon Ball GT</label>
+
+                                    <ul class="zsub">
+                                        <li><a href="../../gt/sagaviagem/viagem.html">Saga Viagem Pelo Universo</a></li>
+                                        <li><a href="../../gt/sagababy/baby.html">Saga Baby Vegeta</a></li>
+                                        <li><a href="../../gt/sagasuper17/super17.html">Saga Super 17</a></li>
+                                        <li><a href="../../gt/sagadragoes/dragoes.html">Saga Dragões Malignos</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><input type="checkbox" id="narutoshi">
+                                    <label for="narutoshi">Naruto Shippuden</label>
+
+                                    <ul class="zsub">
+                                        <li><a href="#">1ª Temporada</a></li>
+                                        <li><a href="#">2ª Temporada</a></li>
+                                        <li><a href="#">3ª Temporada</a></li>
+                                        <li><a href="#">4ª Temporada</a></li>
+                                        <li><a href="#">5ª Temporada</a></li>
+                                        <li><a href="#">6ª Temporada</a></li>
+                                        <li><a href="#">7ª Temporada</a></li>
+                                        <li><a href="#">8ª Temporada</a></li>
+                                        <li><a href="#">9ª Temporada</a></li>
+                                        <li><a href="#">10ª Temporada</a></li>
+                                        <li><a href="#">11ª Temporada</a></li>
+                                        <li><a href="#">12ª Temporada</a></li>
+                                        <li><a href="#">13ª Temporada</a></li>
+                                        <li><a href="#">14ª Temporada</a></li>
+                                        <li><a href="#">15ª Temporada</a></li>
+                                        <li><a href="#">16ª Temporada</a></li>
+                                        <li><a href="#">17ª Temporada</a></li>
+                                        <li><a href="#">18ª Temporada</a></li>
+                                        <li><a href="#">19ª Temporada</a></li>
+                                        <li><a href="#">20ª Temporada</a></li>
+                                    </ul>
+
+                                </li>
+
+                                <li><input type="checkbox" id="taizai">
+                                    <label for="taizai">Nanatsu no taizai</label>
+                                    
+                                    <ul class="zsub">
+                                        <li><a href="#">Saga Os Cavaleiros Sagrados</a></li>
+                                        <li><a href="#">Saga Ressurreição dos Dez Mandamentos</a></li>
+                                        <li><a href="#">Saga Ira dos Seuses</a></li>
+                                    </ul>
+
+                                </li>
+
+                                <li><input type="checkbox" id="yuyu">
+                                    <label for="yuyu">YuYu Hakusho</label>
+                                    
+                                    <ul class="zsub">
+                                        <li><a href="#">Filmes</a></li>
+                                        <li><a href="#">Manga Pt-Br</a></li>
+                                        <li><a href="#">Saga Detetive Espiritual</a></li>
+                                        <li><a href="#">Saga Torneio das Trevas</a></li>
+                                        <li><a href="#">Saga Capítulo Negro</a></li>
+                                        <li><a href="#">Saga Os Três Reis</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+
+                    <section class="moviez">
+                        <h2>Saga Saiyajin Dublado</h2>
+
+                        <p>Imagem feito por <a href="https://artstation.com/artwork/e0qkwG">Marissa Rayner</a></p>
+
+                        <img src="img/saiyan.jpg" draggable="false">
+                        <p>Se algum episódio não estiver funcionando por favor ENTRE EM <a href="#">CONTATO</a>.</p>
+
+                        <hr>
+                            
+                        <div class="saiyan">
+                            <h3>Episódio 1 - Surge um Mini-Goku! Seu Nome é Gohan!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62D2K" target="_blank">Player 1</a>
+        
+                                <span>|</span>
+        
+                                <a href="http://gestyy.com/w62D5i" target="_blank">Player 2</a>
+        
+                                <span>|</span>
+        
+                                <a href="http://gestyy.com/w62D6a" target="_blank" class="player">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 2 - O Irmão Mais Velho de Son-Goku!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62Fr3" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62Ful" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62Fiu">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 3 - Uma Equipe De Peso!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62Fzv" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62Fx9" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62Fc2" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 4 - Piccolo Usa Sua Melhor Estratégia!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62F8U" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62G02" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62Gw3" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 5 - Goku Se Sacrifica! Só Existe Uma Chance!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62Gpf" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62Gfm" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62Ghc" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 6 - A Luta No Outro Mundo!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62GbP" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62GEh" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62GOE" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 7 - O Difícil Treinamento de Gohan!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62G1C" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62G3l" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62G61" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 8 - O Poder Secreto de Gohan!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62H0t" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62Hq6" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62HeK" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 9 - Perdão Sr.Robô! Lágrimas Que Desaparecem No Deserto!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62Hos" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62HpB" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62HsN" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 10 - Não Chore Gohan! É a Primeira Batalha!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62Hl5" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62HcT" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62Hvl" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 11 - O Despertar Dos Saiyajins!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62HbM" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62HWE" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62HEw" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 12 - Goku Cai do Caminho da Serpente!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62JKk" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62JCp" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62JVC" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 13 - A Fruta Secreta De Enma-Sama!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62J1B" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62J5s" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62J8N" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 14 - A Hospitalidade da Princesa Serpente!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62KP0" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62KS9" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62KFu" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 15 - Fugindo de Piccolo! Gohan Enfrenta Uma Tempestade!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w62K35" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62K7r" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w62K9p" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 16 - Corre Gohan! Chi-Chi o Espera na Montanha Paozu!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64ezg" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64ebX" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64en8" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 17 - Um Longo Caminho Até a Vitória!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64eQh" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64eEY" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64eRB" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 18 - O Final do Caminho da Serpente! É o Sr.Kaioh?</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64eU2" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64eOL" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64ePW" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 19 - Domine a Força da Gravidade! Agarre Bubbles!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64eDX" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64eHq" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64eJl" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 20 - A Lenda dos Saiyajins! As Origens de Goku!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64eZ6" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64eVH" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64eBB" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 21 - Os Saiyajins Chegaram á Terra!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64rXH" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64rBh" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="#" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 22 - Impossível! Saibaimans Nascidos da Terra?</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64r2U" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64r4V" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64r6p" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 23 - Yamcha Morre! Os Temíveis Saibaimans!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64r8Z" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64tqO" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64tea" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 24 - Adeus Tenshin! O Sacrifício de Chaos!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64ttw" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64ty8" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64tol" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 25 - O Sacrifício de Tenshin! O Último Kikohou!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64tsW" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64tfK" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="#" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 26 - Só Restam Três Horas De Vida! Apresse-se Goku!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64tkN" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64txO" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64tc6" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 27 - Explode a Fúria de Gohan!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64tns" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64tED" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64tUq" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 28 - A Fúria dos Saiyajins! Adeus Piccolo e Kami-Sama!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64tP8" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64tFH" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64tHU" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 29 - Papai Você é Incrivel! A Técnica chamada Kaioh-Ken!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64tKr" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64tCm" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64tVI" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 30 - Batalha Além dos Limites! Goku Vs Vegeta!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64tMS" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64t3j" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64t4F" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 31 - Arrisque a Vida Goku! A Última Opção!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64t7I" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64t9n" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64y0d" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 32 - A Transformação de Vegeta!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64ywV" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64yrR" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64ytC" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 33 - Não Morra Papai!! O Poder Oculto de Gohan!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64yon" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64ypi" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64yp1" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 34 - Atire Kuririn! A Genkidama Cheia de Esperança!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64ydj" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64ygd" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64yjV" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="saiyan">
+                            <h3>Episódio 35 - Ocorre Um Milagre! A Transformação de Gohan!</h3>
+
+                            <div class="players">
+                                <a href="http://gestyy.com/w64yzC" target="_blank">Player 1</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64ycf" target="_blank">Player 2</a>
+
+                                <span>|</span>
+
+                                <a href="http://gestyy.com/w64yvj" target="_blank">Player 3</a>
+                            </div>
+                        </div>
+
+                    </section>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

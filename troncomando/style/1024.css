@@ -1,0 +1,58 @@
+body{
+    position: relative;
+}
+.conteudo{
+    width: 80%;
+    margin: 5% 10%;
+    background-color: #272525;
+    border-radius: 10px;
+}
+header h1 a{
+    color: white;
+}
+
+/* Menu */
+label img{
+    display: none;
+}
+#check{
+    display: none;
+}
+label h1 a img{
+    display: block;
+}
+
+.dbzmenu{
+    display: none;
+}
+.tira{
+    display: none;
+}
+#navega{
+   margin: 0 10px;
+}
+#navega .link{
+    padding: 10px;
+    margin: 10px;
+}
+#navega a{
+    color: #999;
+    text-decoration: none;
+    
+}
+.barrinha{
+    background-color: #111;
+    display: block;
+    display: inline-block;
+    margin-left: -4px;
+    border-right: 1px solid orange;
+   
+}
+#navega .barrinha:hover{
+    color: white;
+}
+
+/* */
+.inicio{
+    clear: both;
+}
