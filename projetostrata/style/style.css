@@ -1,0 +1,249 @@
+@font-face{
+    font-family: 'pro';
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+body{
+    font-family: 'pro', Helvetica;
+}
+
+/*------------------------------------------------------------------------------*/
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    background-color: #ddd;
+    background-image: linear-gradient(to top left, rgba(0,0,0,.7),
+    transparent),
+    url(../img/bg.jpg);
+    background-position: left;
+    background-size: auto, cover;
+    text-align: right;
+}
+.header-content{
+    margin: 120px 45px;
+}
+.header-content h1, a{
+    clear: both;
+    line-height: 1.5;
+}
+.header-content h1{
+    line-height: 2;
+    color: #ffffff80;
+    font-size: 25px;
+    margin-left: 2%;
+    margin-bottom: 15%;
+}
+.header-content h1 strong{
+    color: #ffffff;
+}
+.header-content img{
+    float: right;
+    margin-bottom: 15px;
+    border-radius: 100%;
+}
+/*----------------------------------------------------------------------------*/
+.header-icons a:hover, footer a:hover{
+    border-bottom-color: transparent;
+    color: #47af92;
+}
+
+.header-icons a, footer, footer a{
+    color: #ffffff66;
+}
+.header-icons i{
+    font-size: 25px;
+    margin: 0 15px 0 0;
+}
+.header-icons{
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+/*-----------------------------------------------------------------------------*/
+footer a{
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+footer p{
+    margin-right: -20px;
+}
+footer span{
+    margin: 0px 5px;
+}
+/*-------------------------------------------------------------------------------*/
+.section-work, .section-touch{
+    border-top: 2px solid #dbdada;
+    margin: 4em 0 0 0;
+    padding: 4em 0 0 0;
+}
+.section-work{
+    margin: 0 0 80px 0;
+}
+
+
+.main-content{
+    width: 65%;
+    margin-left: 35%;
+    padding: 124px 54px;
+    box-sizing: border-box;
+}
+
+.main-content h2{
+    font-size: 30px;
+    color: #787878;
+}
+.main-content p{
+    color: #5f5e5e;
+    font-size: 18px;
+}
+
+#button{
+    padding: 10px 35px 10px 35px;
+    background-color: white;
+    color: #292727;
+    display: inline-block;
+    border: 2px solid #b3acac;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 80px;
+}
+#button:hover{
+    color: #49bf9d;
+    border-color: #49bf9d;
+}
+
+h3{
+    color: #787878;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.col-2{
+    width: 100%;
+    overflow: auto;
+}
+.col-2-1, .col-2-5{
+    float: left;
+    position: relative;
+    left: 0;
+}
+.col-2-2, .col-2-6{
+    float: right;
+    position: relative;
+    left: 0;
+}
+.col-2-3{
+    clear: both;
+    float: left;
+    position: relative;
+    left: 0;
+}
+.col-2-4{
+    clear: right;
+    float: right;
+    position: relative;
+    left: 0;
+}
+
+.col-2 article a img{
+    border-radius: 0.35em;
+}
+
+/*----------------- Hover Effect, View --------------------------*/
+
+.col-2-1 a::before, .col-2-2 a::before, .col-2-3 a::before, .col-2-4 a::before, .col-2-5 a::before, .col-2-6 a::before
+{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    content: '';
+    transition-property: width, height, background-color;
+    transition-duration: .4s;
+    transition-timing-function: linear;
+}
+.col-2-1 a:hover::before, .col-2-2 a:hover::before, .col-2-3 a:hover::before, .col-2-4 a:hover::before, .col-2-5 a:hover:before,
+.col-2-6 a:hover::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 68.2%;
+    border-radius: 0.35em;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    
+}
+
+.col-2-1 a:hover::after, .col-2-2 a:hover::after, .col-2-3 a:hover::after, .col-2-4 a:hover::after, .col-2-5 a:hover::after,
+.col-2-6 a:hover::after
+{
+    content: 'View';
+    position: absolute;
+    width: 20%;
+    border: 4px solid #727171;
+    border-radius: 0.35em;
+    box-sizing: border-box;
+    padding: 2px 10px 2px 15px;
+    left: 39%;
+    top: 30%;
+    color: white;
+    
+}
+/*-------------------------------- Get In Touch -------------------------------------------------*/
+form label{
+    display: block;
+}
+.name{
+    float: left;
+    margin-right: 20px;
+}
+input, textarea{
+    border: transparent;
+    background-color: rgb(231, 227, 227);
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    outline-style: none;
+}
+.email{
+    float: left;
+    margin-bottom: 3%;
+    margin-right: 5%;
+    
+}
+.name label, .txtarea label, .email label{
+    margin-bottom: 5%;
+}
+input:focus, textarea:focus{
+    border: 2px solid #49bf9d;
+    color: rgb(105, 94, 94);
+    padding: 15px;
+}   
+.txtarea{
+    clear: both;
+    width: 61%;
+}
+.txtarea textarea{
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+
+/*---Adress----*/
+.address{
+    margin-top: -17%;
+    margin-left: 5%;
+}
+.phone, .e-mail, .lastbtn, .address{
+    float: left;
+}
+.phone, .e-mail{
+    margin-left: 5%;
+}
+.lastbtn{
+    margin-top: 2%;   
+}
