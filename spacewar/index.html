@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>SpaceWar</title>
+        <meta charset="utf-8">
+        <meta name="author" content="wilian goncalves">
+        <meta name="description" content="bloco jogo arcade">
+        <meta name="keywords" content="html, css, javascript, web, jogo, game, bloco, nave">
+        
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+    </head>
+
+    <body onload="startMenu()">
+        <canvas id="canvas" width = '600' height = '400'>
+        </canvas>
+
+        <audio src="sound/bg/bg.mp3" type="audio/mp3" id="bgsong" class="bg" loop>
+            não suporta.
+        </audio>
+
+        <input type="range" id="vol" max="1" min="0" step="0.01" onchange="volume(this.value)" class="slider"></input>
+
+        <audio src="sound/background/Scenario_1.mp3" type="audio/mp3" id="scenario1" class="scenario" controls></audio>
+        <audio src="sound/laser/Laser_Shoot3.wav" type="audio/ogg" id="shoot1" class="shoot" controls>
+        </audio>
+        <audio src="sound/laser/sfx_laser2.ogg" type="audio/wav" id="shoot2" class="shoot" controls></audio>
+        <audio src="sound/laser/Laser_Shoot.wav" type="audio/wav" id="shoot3" type="shoot" class="shoot" controls></audio>
+
+        <button id="btn-start" onclick="start()">
+            <img src="img/GUI/Main_Menu/Start_BTN.png" draggable="false">
+        </button>
+
+        <button id="btn-map">
+            <img src="img/GUI/Main_Menu/Map_BTN.png" draggable="false">
+        </button>
+
+        <button id="btn-exit" onclick="exit_menu()">
+            <img src="img/GUI/Main_Menu/Exit_BTN.png" draggable="false">
+        </button>
+
+        <button id="btn-exit-menu" onclick="exit_menu()">
+            <img src="img/GUI/Main_Menu/Exit_BTN.png">
+        </button>
+
+        <button id="btn-setting" onclick="setting()">
+            <img src="img/GUI/Main_Menu/Settings_BTN.png" draggable="false">
+        </button>
+
+
+        <div id="sound">
+            <img src="img/GUI/Setting/Sound_BTN.png" draggable="false">
+            <button onclick="songon()" ondblclick="songoff()" id="soundbtn"><img src="img/GUI/Setting/Music_BTN_off.png" id="imgsong" draggable="false"></button>
+            <img src="img/GUI/Setting/Vibration_BTN.png" draggable="false">
+            <img src="img/GUI/Setting/Notifications_BTN.png" draggable="false"> 
+        </div>
+
+        <div id="settingWindow">
+            <img src="img/GUI/Setting/Window_2.png" draggable="false">
+        </div>
+
+        <button id="btn-close" onclick="btnclose()">
+            <img src="img/GUI/Buttons/BTNs/Close_BTN.png">
+        </button>
+
+        <button id="btn-info">
+            <img src="img/GUI/Main_Menu/Info_BTN.png" draggable="false">
+        </button>
+
+        <button id="btn-faq">
+            <img src="img/GUI/Main_Menu/FAQ_BTN.png" draggable="false">
+        </button>
+
+        <button id="btn-shop">
+            <img src="img/GUI/Main_Menu/Shop_BTN.png" draggable="false">
+        </button>
+
+        <button id="btn-rating">
+            <img src="img/GUI/Main_Menu/Rating_BTN.png" draggable="false">
+        </button>
+
+        <button id="btn-more">
+            <img src="img/GUI/Main_Menu/More_Games_BTN.png" draggable="false">
+        </button>
+
+        <button id="btn-facebook">
+            <img src="img/GUI/Main_Menu/Facebook_BTN.png" draggable="false">
+        </button>
+
+        <button id="btn-google">
+            <img src="img/GUI/Main_Menu/Google_BTN.png" draggable="false">
+        </button>
+
+        <button id="btn-twitter">
+            <img src="img/GUI/Main_Menu/Twitter_BTN.png" draggable="false">
+        </button>
+
+        <button id="btn-vk">
+            <img src="img/GUI/Main_Menu/VK_BTN.png" draggable="false">
+        </button>
+
+        <audio src="sound/meteor/meteor1destroyed.wav" type="audio/wav" id="meteor1songdestroyed"></audio>
+
+        <audio src="sound/meteor/meteor2destroyed.wav" type="audio/wav" id="meteor2songdestroyed"></audio>
+
+        <audio src="sound/meteor/meteor3destroyed.wav" type="audio/wav" id="meteor3songdestroyed"></audio>
+
+        <audio src="sound/meteor/meteor5destroyed.wav" type="audio/wav" id="meteor5songdestroyed"></audio>
+
+        <script src="script/script.js"></script>
+        <script src="script/component.js"></script>
+        <script src="script/enemy.js"></script>
+    </body>
+</html>

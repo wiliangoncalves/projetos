@@ -1,0 +1,335 @@
+body{
+    width: 50%;
+    margin: auto;
+}
+#canvas{
+    margin-top: 5%;
+    border: 2px solid black;
+    
+}
+
+#settingWindow{
+    width: 170px;
+    height: 100px;
+    position: absolute;
+    top: 175px;
+    right: 620px;
+    display: none;
+}
+#settingWindow img{
+    width: 100%;
+}
+#sound{
+    width: 35px;
+    height: 56px;
+    position: absolute;
+    top: 210px;
+    left: 585px;
+    padding: 0;
+    background-color: transparent;
+    z-index: 1;
+    border: none;
+    display: none;
+}
+#sound img{
+    width: 100%;
+}
+#soundbtn{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+#vol{
+    width: 8%;
+    height: 15px;
+    border-radius: 15px;
+    outline: none;
+    position: absolute;
+    z-index: 2;
+    top: 255px;
+    left: 625px;
+    display: none;
+}
+.slider{
+    -webkit-appearance: none;
+    width: 1%;
+    height: 1px;
+    border-radius: 1px;  
+    background-color: #030a2c;
+    opacity: 0.5;
+  }
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background-color: #f0f7f0;
+  }
+
+#soundbtn img{
+    width: 100%;
+}
+
+/*#btn-start{
+    width: 150px;
+    height: 56px;
+    position: absolute;
+    top: 245px;
+    left: 580px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}*/
+#btn-start img{
+    width: 100%;
+}
+#btn-start{
+    background-color: transparent;
+}
+#btn-start{
+    animation-name: btn-start;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes btn-start{
+    0%{
+        width: 130px;
+        height: 36px;
+        position: absolute;
+        top: 245px;
+        left: 580px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+    }
+    50%{
+        width: 140px;
+        height: 46px;
+        position: absolute;
+        top: 245px;
+        left: 580px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+    }
+    100%{
+        width: 150px;
+        height: 56px;
+        position: absolute;
+        top: 245px;
+        left: 580px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+#btn-map{
+    width: 150px;
+    height: 56px;
+    position: absolute;
+    top: 315px;
+    left: 580px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+#btn-map img{
+    width: 100%;
+}
+
+#btn-exit{
+    width: 150px;
+    height: 56px;
+    position: absolute;
+    top: 380px;
+    left: 580px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+#btn-exit img{
+    width: 100%;
+}
+#btn-exit-menu{
+    width: 105px;
+    height: 50px;
+    position: absolute;
+    top: 370px;
+    left: 580px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+    display: none;
+}
+#btn-exit-menu img{
+    width: 100%;
+}
+
+#btn-close{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 370px;
+    left: 690px;
+    padding: 0;
+    background-color: transparent;
+    z-index: 1;
+    border: none;
+    display: none;
+}
+#btn-close img{
+    width: 100%;
+}
+
+
+#btn-setting{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 45px;
+    left: 895px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+#btn-setting img{
+    width: 100%;
+}
+
+#btn-faq{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 385px;
+    left: 895px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+#btn-faq img{
+    width: 100%;
+}
+
+#btn-shop{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 325px;
+    left: 895px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+#btn-shop img{
+    width: 100%;
+}
+
+#btn-rating{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 265px;
+    left: 895px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+#btn-rating img{
+    width: 100%;
+}
+
+#btn-more{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 205px;
+    left: 895px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+#btn-more img{
+    width: 100%;
+}
+
+#btn-info{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 45px;
+    left: 355px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+#btn-info img{
+    width: 100%;
+}
+
+
+#btn-facebook{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 205px;
+    left: 355px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+#btn-facebook img{
+    width: 100%;
+}
+
+#btn-google{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 265px;
+    left: 355px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+#btn-google img{
+    width: 100%;
+}
+
+#btn-twitter{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 325px;
+    left: 355px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+#btn-twitter img{
+    width: 100%;
+}
+
+#btn-vk{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 385px;
+    left: 355px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+#btn-vk img{
+    width: 100%;
+}
+
+.shoot{
+    display: none;
+}
+.scenario{
+    display: none;
+}
