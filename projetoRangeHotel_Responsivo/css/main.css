@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+html{
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+body{
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Oxygen";
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffff;
+    display: inline-block;
+    width: 100%;
+    background-color: #612674;
+    padding: 1em;
+    box-sizing: border-box;
+}
+nav ul li a:hover{
+    background-color: #7c3792;
+}
+
+.intro, h1 h1 + p{
+    color: #612674;
+}
+.intro{
+    margin-bottom: 2.5em;
+}
+
+.btn{
+    color: white;
+    padding: .9em 2em .9em 2em;
+    background-color: #58c4c4;
+    border-radius: .2em;
+    border: none;
+    outline: none;
+}
+.btn:hover{
+    background-color: #37a0a0;
+}
+.button{
+    margin-top: 1.5em;
+}
+.button a, .btn-started a{
+    text-decoration: none;
+}
+.btn-started{
+    margin-top: 1.5em;
+}
+
+.icon-play{
+    height: 5em;
+    display: none;
+}
+.icon-play img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h3, span{
+    color: #652e78;
+    text-transform: uppercase;
+}
+span[class^=icon]{
+    font-size: 3.5em;
+}
+
+.main-top{
+    width: 100%;
+    text-align: center;
+    padding: 0 0 1em 0;
+    background-color: #f6f6f6;
+    display: inline-block;
+}
+
+.main-bottom section{
+    margin: 1em 0 1em 2em;
+}
+.main-bottom section h3{
+    font-size: 1.25em;
+    letter-spacing: .2em;
+}
+.main-bottom p{
+    margin: 0;
+}
+
+footer{
+    background-color: #25303e;
+    margin-top: 4em;
+    text-align: center;
+    color: #83969f;
+    padding-bottom: 2em;
+}
+footer p{
+    width: 99%;
+    text-align: center;
+}
+footer ul{
+    list-style: none;
+    background-color: #303d4c;
+    padding: .5em;
+}
+footer ul li{
+    display: inline-block;
+    margin: 0 1em;
+}
+footer ul li a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 48.75em){
+    header{
+        float: left;
+        background-color: #f6f6f6;
+    }
+    header img{
+        background-color: #ffff;
+        position: relative;
+        top: 0;
+        margin-bottom: -0.4em;
+        z-index: 1;
+    }
+    nav{
+        background-color: transparent;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    nav ul{
+        list-style: none;
+        margin-left: 20em;
+        float: right;
+    }
+    nav ul li{
+        float: left;
+    }
+    nav ul li a{
+        color: #713a84;
+        background-color: transparent;
+        margin-top: 0.1em;
+    }
+    nav ul li a:hover{
+        background-color: #e7d9fc;
+    }
+
+    .intro{
+        background-color: #521a66;
+        color: white;
+        padding: 1em 0 1em 0;
+    }
+    .intro div{
+        margin-bottom: .5em;
+    }
+
+    .icon-play{
+        display: block;
+    }
+
+    .col_1_4{
+        background-color: transparent;
+        width: 45%;
+        float: left;
+        margin-left: 3%;
+        margin-bottom: 2%;
+    }
+    .col_2_4{
+        background-color: transparent;
+        width: 45%;
+        float: left;
+        margin-left: 3%;
+        margin-top: 2%;
+    }
+    
+    .main-bottom{
+        margin-top: 5%;
+    }
+    section div{
+        float: right;
+        margin-right: 1em;
+    }
+
+    footer{
+        clear: right;
+        margin-top: 8em;
+    }
+}
+
+@media screen and (min-width: 62.5em){
+    .intro{
+        background: #521a66 url(../img/bg_topo_1198x670.jpg);
+        background-position: center bottom;
+        height: 20em;
+        padding-top: 17em;
+    }
+    nav ul{
+        margin-left: 22.3em;
+    }
+}
+
+@media screen and (min-width: 74em){
+    header img{
+        left: 5em;
+        background-color: #ffffff;
+    }
+    nav{
+        background-color: #ffffff;
+        height: 4em;
+    }
+    .intro{
+        background: url(../img/bg_topo_1600x1374.jpg);
+        padding: 19em 20em 10em;
+        background-position: center top;
+    }
+    .icon-play{
+        height: 7em;
+    }
+
+    .col{
+        margin: 0 1em 0 2.5em;
+        width: 20%;
+        background-color: transparent;
+    }
+
+    .main-bottom section{
+        background-color: transparent;
+        width: 40%;
+        float: left;
+        margin: 0 0 0 6em;
+    }
+    footer{
+        clear: left;
+        margin-top: 30em;
+    }
+
+    .button{
+        float: left;
+    }
+    .btn-started{
+        text-align: center;
+    }
+}
