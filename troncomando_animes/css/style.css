@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*background-color: #1b1b1c;*/
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+#contato{
+    background-color: rgb(56, 51, 51);
+}
+
+#contato label{
+    display: block;
+}
+
+form select, input{
+    background-color: blue;
+}
+
+form select option{
+    background-color: blue;
+}
+
+body{
+    font-size: 17px;
+}
+
+#letras a:hover{
+    color: rgb(218, 156, 40);
+    background-color: rgb(59, 51, 51);
+}
+
+#container{
+    width: 100%;
+    background-color: #1b1b1c;
+}
+
+header{
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    background-color: #0e0e0e;
+}
+
+.nav-bar{
+    background-color: rgb(15, 12, 12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar{
+    padding: 15px;
+    background-color: rgb(59, 51, 51);
+}
+.search{
+    padding: 11.1px;
+    background-color: rgb(59, 51, 51);
+}
+/*
+.nav-bar a{
+    background-color: rgb(59, 51, 51);
+    display: inline-block;
+    padding: 12px;
+}
+*/
+nav{
+    margin-bottom: 15px;
+}
+.nav-bar h1{
+    font-size: 1.5em;
+}
+
+nav ul{
+    background-color: #111111;
+    padding: 3px;
+}
+nav ul li a{
+    font-size: 1.2em;
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    background-color: #3a3535;
+    border-left: 2px solid #927b7b;
+    border-bottom: 2px solid #927b7b; 
+}
+nav ul li a:hover{
+    border-left: 2px solid orange;
+    border-bottom: 2px solid orange;
+}
+nav ul li{
+    margin: 7px 0px 2px 3px;
+}
+
+nav ul{
+    display: none;
+}
+
+/* Letras */
+#letras{
+    background-color: #2c2c2c;
+    padding: 15px;
+    overflow: auto;
+    white-space: nowrap;
+}
+#letras a{
+    color: #7c7979;
+    font-size: 1em;
+    padding: 15px;
+}
+
+/* main*/
+main{
+    width: 95%;
+    margin: auto;
+    background-color: #1b1919;
+    font-size: 1.5em;
+}
+
+main h2{
+    border-left: 3px solid orange;
+    padding: 6px;
+    margin: auto;
+}
+
+.setas{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.setas a{
+    background-color: #080808;
+    padding: 5px 10px 0px 10px;
+}
+.setas a:active{
+    background-color: rgba(194, 183, 183, 0.5);
+}
+
+.anime{
+    margin: 10px 5px 30px 5px;
+}
+.anime img{
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+}
+.anime h3{
+    text-align: center;
+}
+
+.anime a{
+    opacity: 1;
+}
+.anime a:hover{
+    opacity: 0.5;
+}
+
+/* footer*/
+footer{
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* 480px */
+@media screen and (min-width: 30em) and (max-width: 48em){
+    body{
+        font-size: 1.4em;
+    }
+
+    .bar{
+        margin-top: -1px;
+        padding: 30px;
+    }
+    .search{
+        padding: 25px;
+    }
+
+    #letras a{
+        font-size: 1.1em;
+    }
+}
+
+/* 768px */
+@media screen and (min-width: 48em){
+    body{
+        font-size: 1.2em;
+    }
+
+    .choose{
+        margin-left: 5px;
+    }
+
+    .bar{
+        display: none;
+    }
+
+    .nav-bar{
+        right: 0px;
+        width: 100%;
+    }
+    .nav-bar h1 a:hover{
+        color: rgb(218, 156, 40);
+        background-color: rgb(59, 51, 51);
+    }
+
+    nav ul{
+        width: 55%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: -75px;
+        margin-left: 230px;
+        background-color: #0f0c0c;
+    }
+
+    nav ul li{
+        margin: 0px 15px 0px 0px;
+        padding: 0;
+    }
+
+    nav ul li a{
+        display: block;
+        background-color: #0f0c0c;
+        border-left: none;
+        border-bottom: none;
+        background-color: ccc;
+        padding: 15px;
+    
+    }
+    nav ul li a:hover{
+        border-left: none;
+        border-bottom: none;
+        color: rgb(218, 156, 40);
+        background-color: rgb(26, 24, 24);
+    }
+
+    .choose{
+        display: none;
+    }
+
+    header{
+        margin: 0;
+        padding: 0;   
+    }
+
+    .search{
+        padding: 1.1em 1.1em 1.1em 1.2em;
+        z-index: 1;
+    }
+
+
+    #letras a{
+        padding: 15px;
+        margin-top: 50px;
+        font-size: 1.2em;
+    }
+    #letras{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .animesgrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+
+    .anime a img{
+        max-width: 100%;
+        height: 200px;
+        border-radius: 250px;
+    }
+
+    .anime{
+        max-width: 95%;
+        width: 90%;
+        border-radius: 55px;
+    }
+
+    .anime h3{
+        margin: 0;
+        padding: 0;
+    }
+
+    footer p{
+        font-size: 1.5em;
+    }
+
+    /* 1024px and max */
+    @media screen and (min-width: 64em){
+
+        body{
+            font-size: 1.1em;
+        }
+
+        nav ul li a{
+            font-size: 1.7em;
+        }
+
+        .anime a img{
+            max-width: 100%;
+            height: 200px;
+            border-radius: 250px;
+        }
+
+        .anime h3{
+            font-size: 1em;
+            text-align: center;
+        }
+
+    }
+}
